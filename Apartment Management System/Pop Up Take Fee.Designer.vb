@@ -125,21 +125,21 @@ Partial Class Pop_Up_Take_Fee
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox1.Location = New System.Drawing.Point(14, 193)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(464, 37)
+        Me.TextBox1.Size = New System.Drawing.Size(464, 26)
         Me.TextBox1.TabIndex = 6
         '
         'TextBox2
         '
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox2.Location = New System.Drawing.Point(14, 258)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(464, 37)
+        Me.TextBox2.Size = New System.Drawing.Size(464, 26)
         Me.TextBox2.TabIndex = 7
         '
         'Button1

@@ -11,7 +11,7 @@ Public Class Pop_Up_Edit_Apartment
     Public Property DashboardFormInstance As DashboardForm
 
     ' Connection string for database connection
-    Dim connectionString As String = "Server=localhost;Database=oopapartment;Uid=root;Pwd=123456"
+    Dim connectionString As String = "Server=localhost;Database=oopapartment;Uid=root"
     Dim connection As New MySqlConnection(connectionString)
 
     Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles Save.Click

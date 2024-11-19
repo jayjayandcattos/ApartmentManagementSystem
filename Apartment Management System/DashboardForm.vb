@@ -1,7 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class DashboardForm
-    Dim connectionString As String = "Server=localhost;Database=oopapartment;Uid=root;Pwd=123456"
+    Dim connectionString As String = "Server=localhost;Database=oopapartment;Uid=root"
     Dim connection As New MySqlConnection(connectionString)
 
     ' Method to open the database connection

@@ -103,21 +103,21 @@ Partial Class Pop_Up_Edit_Apartment
         'TextBox2
         '
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox2.Location = New System.Drawing.Point(31, 107)
         Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(152, 32)
+        Me.TextBox2.Size = New System.Drawing.Size(152, 26)
         Me.TextBox2.TabIndex = 6
         '
         'TextBox3
         '
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox3.Location = New System.Drawing.Point(242, 107)
         Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(152, 32)
+        Me.TextBox3.Size = New System.Drawing.Size(152, 26)
         Me.TextBox3.TabIndex = 7
         '
         'Save
@@ -152,22 +152,22 @@ Partial Class Pop_Up_Edit_Apartment
         'TextBox4
         '
         Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox4.Location = New System.Drawing.Point(31, 213)
         Me.TextBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(152, 32)
+        Me.TextBox4.Size = New System.Drawing.Size(152, 26)
         Me.TextBox4.TabIndex = 10
         '
         'ComboBox1
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.2!)
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Vacant", "Occupied"})
         Me.ComboBox1.Location = New System.Drawing.Point(242, 213)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(152, 34)
+        Me.ComboBox1.Size = New System.Drawing.Size(152, 28)
         Me.ComboBox1.TabIndex = 12
         '
         'Label6
