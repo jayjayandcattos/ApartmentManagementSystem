@@ -70,12 +70,11 @@ Partial Class TenantsForm
         'ListView1
         '
         Me.ListView1.Alignment = System.Windows.Forms.ListViewAlignment.[Default]
-        Me.ListView1.BackgroundImage = CType(resources.GetObject("ListView1.BackgroundImage"), System.Drawing.Image)
         Me.ListView1.BackgroundImageTiled = True
         Me.ListView1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.TenantName, Me.Email, Me.ContactNo, Me.UnitNo, Me.RegistrationDate})
-        Me.ListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ListView1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.ListView1.Font = New System.Drawing.Font("Leelawadee", 9.75!)
+        Me.ListView1.ForeColor = System.Drawing.Color.Black
         Me.ListView1.FullRowSelect = True
         Me.ListView1.GridLines = True
         Me.ListView1.HideSelection = False
@@ -160,7 +159,7 @@ Partial Class TenantsForm
         Me.Panel2.Location = New System.Drawing.Point(9, 28)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(791, 42)
+        Me.Panel2.Size = New System.Drawing.Size(791, 51)
         Me.Panel2.TabIndex = 0
         '
         'AddTenant
@@ -173,10 +172,10 @@ Partial Class TenantsForm
         Me.AddTenant.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.AddTenant.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AddTenant.ForeColor = System.Drawing.Color.White
-        Me.AddTenant.Location = New System.Drawing.Point(676, 11)
+        Me.AddTenant.Location = New System.Drawing.Point(654, 7)
         Me.AddTenant.Margin = New System.Windows.Forms.Padding(2)
         Me.AddTenant.Name = "AddTenant"
-        Me.AddTenant.Size = New System.Drawing.Size(87, 21)
+        Me.AddTenant.Size = New System.Drawing.Size(126, 33)
         Me.AddTenant.TabIndex = 1
         Me.AddTenant.Text = "Add Tenant"
         Me.AddTenant.UseVisualStyleBackColor = False

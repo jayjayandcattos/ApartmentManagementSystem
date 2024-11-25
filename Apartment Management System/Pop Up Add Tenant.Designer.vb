@@ -35,8 +35,8 @@ Partial Class Pop_Up_Add_Tenant
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -47,7 +47,7 @@ Partial Class Pop_Up_Add_Tenant
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Panel1.Controls.Add(Me.Label6)
         Me.Panel1.Location = New System.Drawing.Point(1, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(794, 52)
         Me.Panel1.TabIndex = 0
@@ -118,10 +118,10 @@ Partial Class Pop_Up_Add_Tenant
         Me.SaveButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(153, Byte), Integer), CType(CType(81, Byte), Integer))
         Me.SaveButton.BackgroundImage = CType(resources.GetObject("SaveButton.BackgroundImage"), System.Drawing.Image)
         Me.SaveButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.SaveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.SaveButton.ForeColor = System.Drawing.Color.White
         Me.SaveButton.Location = New System.Drawing.Point(563, 294)
-        Me.SaveButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SaveButton.Margin = New System.Windows.Forms.Padding(2)
         Me.SaveButton.Name = "SaveButton"
         Me.SaveButton.Size = New System.Drawing.Size(80, 31)
         Me.SaveButton.TabIndex = 11
@@ -132,10 +132,10 @@ Partial Class Pop_Up_Add_Tenant
         '
         Me.CancelButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(142, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(147, Byte), Integer))
         Me.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.CancelButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CancelButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.CancelButton.ForeColor = System.Drawing.Color.White
         Me.CancelButton.Location = New System.Drawing.Point(676, 294)
-        Me.CancelButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CancelButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CancelButton.Name = "CancelButton"
         Me.CancelButton.Size = New System.Drawing.Size(80, 31)
         Me.CancelButton.TabIndex = 12
@@ -157,52 +157,48 @@ Partial Class Pop_Up_Add_Tenant
         'TextBox1
         '
         Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox1.Location = New System.Drawing.Point(13, 107)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(217, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(217, 26)
         Me.TextBox1.TabIndex = 16
         '
         'TextBox2
         '
         Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox2.Location = New System.Drawing.Point(265, 107)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(217, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(217, 26)
         Me.TextBox2.TabIndex = 17
         '
         'TextBox3
         '
         Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.TextBox3.Location = New System.Drawing.Point(549, 107)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(2)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(217, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(217, 26)
         Me.TextBox3.TabIndex = 18
         '
-        'TextBox4
+        'ComboBox1
         '
-        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.TextBox4.Location = New System.Drawing.Point(13, 222)
-        Me.TextBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox4.TabIndex = 19
+        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(13, 213)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(217, 28)
+        Me.ComboBox1.TabIndex = 21
         '
-        'TextBox5
+        'DateTimePicker1
         '
-        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.TextBox5.Location = New System.Drawing.Point(265, 222)
-        Me.TextBox5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(217, 20)
-        Me.TextBox5.TabIndex = 20
+        Me.DateTimePicker1.Location = New System.Drawing.Point(265, 221)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 22
         '
         'Pop_Up_Add_Tenant
         '
@@ -210,8 +206,8 @@ Partial Class Pop_Up_Add_Tenant
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer), CType(CType(217, Byte), Integer))
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.ClientSize = New System.Drawing.Size(793, 366)
-        Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -225,7 +221,7 @@ Partial Class Pop_Up_Add_Tenant
         Me.Controls.Add(Me.Panel1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Pop_Up_Add_Tenant"
@@ -249,6 +245,6 @@ Partial Class Pop_Up_Add_Tenant
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class

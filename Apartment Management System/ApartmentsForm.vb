@@ -50,7 +50,7 @@ Public Class ApartmentsForm
         End Try
     End Sub
 
-    Private Sub LoadApartmentsFromDatabase()
+    Public Sub LoadApartmentsFromDatabase()
         Try
             ' Open the connection
             OpenConnection()
@@ -164,6 +164,31 @@ Public Class ApartmentsForm
             DashboardFormInstance.RefreshDashboardData()
         End If
 
+    End Sub
+
+    Public Sub UpdateApartmentStatus(unitNo As String, status As String)
+        Try
+            ' Open the connection
+            OpenConnection()
+
+            ' SQL query to update the apartment status
+            Dim query As String = "UPDATE tbl_rooms SET status = @Status WHERE unit_number = @UnitNo"
+
+            ' MySQL command with parameters to prevent SQL injection
+            Dim cmd As New MySqlCommand(query, connection)
+            cmd.Parameters.AddWithValue("@UnitNo", unitNo)
+            cmd.Parameters.AddWithValue("@Status", status)
+
+            ' Execute the update command
+            cmd.ExecuteNonQuery()
+
+            ' Close the connection
+            CloseConnection()
+        Catch ex As Exception
+            MessageBox.Show("Error updating apartment status: " & ex.Message)
+        Finally
+            CloseConnection()
+        End Try
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click

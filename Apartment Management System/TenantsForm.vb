@@ -218,6 +218,44 @@ Public Class TenantsForm
         End If
     End Sub
 
+    Public Sub LoadTenantListView()
+        Try
+            OpenConnection()
+
+            ' SQL query to select all tenants
+            Dim query As String = "SELECT t.tenants_name, t.tenants_email, t.contact_number, r.unit_number, t.registration_date " &
+                                  "FROM tbl_tenants t " &
+                                  "INNER JOIN tbl_rooms r ON t.tenants_unitnum = r.unit_id " &
+                                  "WHERE r.status = 'Occupied'"
+            Dim adapter As New MySqlDataAdapter(query, connection)
+            Dim table As New DataTable()
+
+            adapter.Fill(table)
+
+            ' Clear the current ListView data
+            ListView1.Items.Clear()
+
+            ' Populate the ListView with data from the database
+            For Each row As DataRow In table.Rows
+                Dim item As New ListViewItem(row("tenants_name").ToString()) ' tenants_name
+                item.SubItems.Add(row("tenants_email").ToString()) ' tenants_email
+                item.SubItems.Add(row("contact_number").ToString()) ' contact_number
+                item.SubItems.Add(row("unit_number").ToString()) ' unit_number
+                item.SubItems.Add(Convert.ToDateTime(row("registration_date")).ToString("yyyy-MM-dd")) ' registration_date
+                ListView1.Items.Add(item)
+            Next
+
+            CloseConnection()
+
+        Catch ex As Exception
+            MessageBox.Show("Error loading tenants: " & ex.Message)
+        End Try
+
+
+
+        LoadTenantsFromDatabase()
+    End Sub
+
     ' Event to handle form load and populate ListView
     Private Sub TenantsForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         ListView1.Clear()
@@ -233,5 +271,9 @@ Public Class TenantsForm
 
         ' Load tenants from the database
         LoadTenantsFromDatabase()
+    End Sub
+
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
+
     End Sub
 End Class
